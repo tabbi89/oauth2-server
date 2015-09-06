@@ -39,8 +39,8 @@ $passwordGrant->setVerifyCredentialsCallback(function ($username, $password) {
 });
 $server->addGrantType($passwordGrant);
 
-$refrehTokenGrant = new \League\OAuth2\Server\Grant\RefreshTokenGrant();
-$server->addGrantType($refrehTokenGrant);
+$refreshTokenGrant = new \League\OAuth2\Server\Grant\RefreshTokenGrant();
+$server->addGrantType($refreshTokenGrant);
 
 // Routing setup
 $request = (new Request())->createFromGlobals();
